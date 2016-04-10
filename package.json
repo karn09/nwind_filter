@@ -1,0 +1,21 @@
+{
+  "name": "nwind_filter",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "bluebird": "^3.3.4",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "faker": "^3.1.0",
+    "mongoose": "^4.4.12",
+    "morgan": "^1.7.0"
+  }
+}
