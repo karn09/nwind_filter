@@ -4,8 +4,8 @@ var Employee = require('../api/employees/employee.model');
 var Promise = require('bluebird');
 var db = require('../db');
 
-var numEmployees = 1000;
-var numProducts = 50000;
+var numEmployees = 500;
+var numProducts = 500;
 // console.log(Employee);
 
 function randEmployee() {
