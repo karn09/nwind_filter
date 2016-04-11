@@ -11,7 +11,6 @@
             $scope.letters = itemFrequency;
             $scope.type = $stateParams.type;
             $scope.disabled = function(val) {
-                console.log(val)
                 return val === 0;
             }
             $scope.go = function(type, letter, count, page) {

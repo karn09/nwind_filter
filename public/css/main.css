@@ -1,0 +1,4 @@
+.superDisabled {
+    pointer-events: none;
+    text-decoration: line-through;
+}
