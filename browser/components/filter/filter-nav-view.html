@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="row">
+    <div class="col-xs-6">
+      <h4>Total Records: {{count}}</h4>  
+    </div>
+    <div class="col-xs-6">
+      <span class="pull-right">
+        <button class="btn btn-default" ng-click="direction(-1)"><<</button>
+        <button class="btn btn-default" ng-click="direction(+1)">>></button>
+      </span>
+
+    </div>
+  </div>
+  <!-- points to view table -->
+  <ui-view></ui-view>
+</div>

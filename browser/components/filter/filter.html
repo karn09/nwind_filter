@@ -1,7 +1,0 @@
-<div class="container-fluid">
-  <ul class="nav navbar-nav" ng-repeat="letter in letters | orderBy: _id">
-    <li ng-class="{active: !disabled(letter.value), disabled: disabled(letter.value)}" ng-click="go(type, letter._id, letter.value)">
-      <a>{{letter._id}}</a>
-    </li>
-  </ul>
-</div>
