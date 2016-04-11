@@ -8,7 +8,7 @@ var appPath = path.join(rootPath, 'browser');
 var vendorPath = path.join(rootPath, 'node_modules');
 
 router.use('/vendor', express.static(vendorPath));
-router.use('/app', express.static(appPath));
+router.use('/browser', express.static(appPath));
 router.use(express.static(publicPath));
 
 module.exports = router;

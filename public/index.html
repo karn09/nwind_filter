@@ -3,8 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Northwind Filter</title>
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/dist/css/bootstrap-theme.css">
+    <!-- vendor dependencies -->
+    <script src="/vendor/jquery/dist/jquery.js"></script>
+    <script src="/vendor/angular/angular.js"></script>
+    <script src="/vendor/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- main app dependencies -->
+    <script src="/browser/components/main/main.js"></script>
+    <script src="/browser/components/main/main.state.js"></script>
+    <script src="/browser/app/employees/employees.state.js"></script>
+    <script src="/browser/app/products/products.state.js"></script>
+    <!-- navbar -->
+    <script src="/browser/components/navbar/navbar.directive.js"></script>
+    <!-- filtering -->
+    <script src="/browser/components/filter/filter.directive.js"></script>
+    <script src="/browser/components/filter/filter.controller.js"></script>
+    <script src="/browser/components/filter/filter.factory.js"></script>
   </head>
-  <body>
-
+  <body ng-app="northwind">
+    <navbar></navbar>
+    <div class="container-fluid">
+      <ui-view></ui-view>
+    </div>
   </body>
 </html>

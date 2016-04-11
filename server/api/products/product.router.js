@@ -5,7 +5,7 @@ var freq = require('../../utils/frequency');
 router.get('/', function(req, res, next) {
   Product.mapReduce(freq)
     .then(function(model) {
-      return model.find();
+      return model.find({});
     })
     .then(function(docs) {
       res.json(docs);
@@ -24,6 +24,7 @@ router.get('/:letter', function(req, res, next) {
     .skip(skipRecs)
     .limit(size)
     .then(function(products) {
+      console.log(products);
       res.json(products);
     });
 });

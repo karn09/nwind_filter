@@ -1,0 +1,7 @@
+<div class="container-fluid">
+  <ul class="nav navbar-nav" ng-repeat="letter in letters | orderBy: _id">
+    <li ng-disabled="letter.value !== 0" ui-sref-active="active">
+      <a ui-sref="{{type}}.filter({letter: letter._id, count: letter.value})">{{letter._id}}</a>
+    </li>
+  </ul>
+</div>
