@@ -8,3 +8,4 @@ To get started:
 2. run: npm seed (this will set you up with some data)
  * amount of seeded data can be changed in seed.js
 3. run: npm start
+I don't have to npm install.. :)

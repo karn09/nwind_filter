@@ -1,0 +1,6 @@
+- think through your route naming.. your api/products is really a map
+- if you want to resolve multiple items, resolve them in multiple keys
+- you are resolving something called items.. which is more than items
+- it doesn't make sense to me, to have a ui-view in your directive
+- use some kind of linting to catch semicolons
+- i don't use mapReduce- not sure what it does, so hard for me to give you meaningful feedback

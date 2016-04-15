@@ -9,12 +9,13 @@ app.factory('FilterFactory', function($http, $q) {
         return $http.get('/api/' + type)
           .then(function(results) {
             _cachedFreq[type] = [];
-            angular.copy(results.data, _cachedFreq[type]);
+            angular.copy(results.data, _cachedFreq[type]);//why the copy?
             return _cachedFreq[type];
           });
       }
     },
     fetchByLetter: function(letter, type, page, size) {
+      //pass in a second object with your params.. this way you don't have to concatenate a url
       return $http.get('/api/' + type + '/' + letter + '?size=' + size + '&page=' + page)
         .then(function(results) {
           return results.data;

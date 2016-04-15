@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/:letter', function(req, res, next) {
   var letter = req.params.letter.toUpperCase();
-  var page = Number(req.query.page);
+  var page = Number(req.query.page);//why query string? why not pass as route param?
   var size = Number(req.query.size);
   var skipRecs = page > 0 ? ((page - 1) * size) : 0;
 

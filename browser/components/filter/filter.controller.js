@@ -1,4 +1,5 @@
 app.controller('filterCtrl', function($scope, items) {
+  console.log(items);
   items.names.then(function(names){
       $scope.items = names;
   })

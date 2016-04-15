@@ -29,6 +29,7 @@
       controller: 'filterCtrl',
       resolve: {
         items: function(FilterFactory, $stateParams) {
+          //what do you buy out of putting this in one object? I find it a bit confusing
           return { 
             names: FilterFactory.fetchByLetter( $stateParams.letter,
             $stateParams.type, $stateParams.page, 10),
